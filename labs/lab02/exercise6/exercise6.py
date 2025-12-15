@@ -1,5 +1,4 @@
-def is_leap_year(year):
-    """
+"""
     Determines if a year is a leap year according to the Gregorian calendar.
     
     Rules:
@@ -15,4 +14,17 @@ def is_leap_year(year):
     """
     # TODO: Implement the leap year logic
     # Hint: Check divisibility in the correct order
-    pass
+    
+def is_leap_year(year): 
+    if year % 400 == 0:
+        return True 
+    elif year % 100 == 0: 
+        return False 
+    elif year % 4 == 0:
+        return True
+    else:
+       return False
+
+result= is_leap_year(2024)
+result= is_leap_year(1900)
+result= is_leap_year(2000)

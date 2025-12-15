@@ -5,7 +5,7 @@ import math
 
 def calculate_event_cost(participants, tent_capacity, tent_price, meal_price):
     # Calculate total_tent 
-    total_tent = participants / tent_capacity 
+    total_tent =math.ceil(participants / tent_capacity)
 
     #Calculate total_tent_price
     total_tent_price = total_tent * tent_price 
