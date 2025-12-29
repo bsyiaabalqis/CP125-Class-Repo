@@ -3,8 +3,8 @@ def is_valid_multiple(amount):
     """
     Checks if the amount is a multiple of RM10.
     """
-    # TODO: Implement this function
-    pass
+  if amount % 10 == 0:
+    
 
 def is_balance_sufficient(amount, balance):
     """
