@@ -3,7 +3,17 @@ def filter_query_times(times):
     """
     Remove slow outliers (mean + std deviation) and return sorted times.
     """
-    pass
+
+    mean = sum(times) / len(times)
+    variance = (sum((times[i]-mean)**2))/ len(times)
+    std_dev = variance ** 0.5
+
+    outlier = mean + std_dev 
+
+    for i in times:
+        if i > outlier:
+            i 
+       
 
 
 # Test
