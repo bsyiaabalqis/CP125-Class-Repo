@@ -21,3 +21,10 @@ f = open("data/demofile.txt", "r")
 lines = f.readlines()
 print(f"All lines: {lines}")
 f.close()
+
+f = open("data/demofile.txt", "r")
+content = f.read()
+print(content) 
+print(type(content))
+
+f.close()

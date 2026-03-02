@@ -13,10 +13,22 @@ def calculate_order_total(products_file, order_file, output_file):
     Returns:
         float: grand total of all orders
     """
-    # TODO: Implement this function
-    pass
+    import csv 
+    f = open("products.csv","r",newline="")
+    reader = csv.reader(f)
 
+    for row in reader: 
+        print(row) 
+
+    import csv 
+    f = open("order.csv","r",newline="")
+    reader = csv.reader(f)
+
+    for row in reader: 
+        print(row) 
+
+    f.close()
 
 # Test your code here
-result = calculate_order_total("data/products.csv", "data/order.csv", "data/total.csv")
+result = calculate_order_total("products.csv", "order.csv", "total.csv")
 print(f"Grand total: ${result:.2f}")

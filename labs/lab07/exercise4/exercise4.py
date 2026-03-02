@@ -1,5 +1,13 @@
 def apply_upgrade(current, upgrade):
     # TODO: Your code here
+    result = {
+        "current": current.copy(),
+        "upgrade": upgrade.copy()
+    }
+
+    for key in upgrade:
+        if key in current < upgrade[key]: 
+            result = upgrade[key]
     pass
 
 
