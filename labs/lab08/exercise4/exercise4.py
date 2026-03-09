@@ -7,7 +7,6 @@ def calculate_final_grades(input_file, output_file):
 
     output = open(output_file, "w", newline= "")
 
-    
     """
     Calculate final grades from midterm and final scores.
 
@@ -18,10 +17,6 @@ def calculate_final_grades(input_file, output_file):
     Returns: 
         float: average of all final grades
     """
-    # TODO: Implement this function
-    pass
 
-
-# Test your code here
 result = calculate_final_grades("/labs/lab08/exercise4.py/data/scores.csv", "/labs/lab08/exercise4.py/data/grades.csv")
 print(f"Average final grade: {result:.2f}")
