@@ -5,16 +5,16 @@ Uncomment each section one at a time to see the error.
 Then read the explanation and fix it.
 """
 
-import pandas as pd
-import matplotlib.pyplot as plt
+
 
 # ============================================
 # ERROR 1: Forgetting to import matplotlib
 # ============================================
 # Uncomment to see error:
+import pandas as pd
+import matplotlib.pyplot as plt
 # plt.plot([1, 2], [3, 4])
 # NameError: name 'plt' is not defined
-
 # Fix: Always import matplotlib.pyplot as plt at the top
 
 
@@ -23,6 +23,7 @@ import matplotlib.pyplot as plt
 # ============================================
 # Uncomment to see problem:
 # plt.plot([1, 2, 3], [4, 5, 6])
+# plt.show()
 # plt.title("My Chart")
 # Nothing appears! Need plt.show()
 
@@ -49,6 +50,7 @@ import matplotlib.pyplot as plt
 # data2 = [78, 88, 75, 82, 91]
 # plt.hist(data1, bins=5, alpha=0.5, label="Math")
 # plt.hist(data2, bins=5, alpha=0.5, label="Science")
+# plt.legend()
 # plt.show()
 # Labels exist but don't appear!
 
@@ -59,7 +61,7 @@ import matplotlib.pyplot as plt
 # ERROR 5: Wrong alpha range
 # ============================================
 # Uncomment to see error:
-# plt.hist([85, 92, 78], alpha=2.0)
+# plt.hist([85, 92, 78], alpha=1.0)
 # plt.show()
 # ValueError: alpha must be in range 0-1
 
