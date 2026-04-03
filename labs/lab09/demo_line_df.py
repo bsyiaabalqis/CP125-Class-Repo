@@ -8,13 +8,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load data
-df = pd.read_csv("data/students.csv")
+df = pd.read_csv("labs/lab09/data/students.csv")
 
 # Plot Math scores using DataFrame column
 plt.plot(df.index, df['Math'])
 
 plt.xlabel("Student Index")
-plt.ylabel("Math Score")
+plt.ylabel(" Score")
 plt.title("Math Scores Across Students")
-
 plt.show()
