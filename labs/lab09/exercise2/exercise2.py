@@ -23,3 +23,4 @@ def compare_averages(filename):
         "best_subject": best, 
         "worst_subject": worst  
     }
+ 

@@ -17,3 +17,4 @@ def show_math_trend(filename):
 
     #utk show graph
     plt.show()
+    return len(df)
